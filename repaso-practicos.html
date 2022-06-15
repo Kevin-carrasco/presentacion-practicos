@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Repaso prácticos 1 a 4</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Estadística Multivariada 2022" />
+    <script src="repaso-practicos_files/header-attrs-2.13/header-attrs.js"></script>
+    <link rel="stylesheet" href="xaringan-kevin.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+.title[
+# Repaso prácticos 1 a 4
+]
+.subtitle[
+## .medium[<strong>Desde Preparación de datos en R hasta Regresión simple II</strong>]
+]
+.author[
+### Estadística Multivariada 2022
+]
+.institute[
+### .small[<strong>Universidad de Chile</strong>]
+]
+.date[
+### Miércoles 14/06/2022
+]
+
+---
+
+
+
+
+## Estructura de la presentación
+
+* Práctica 1: Preparación de datos
+
+* Práctica 2: Descripción de variables
+
+* Práctica 3: Regresión simple I
+
+* Práctica 4: Regresión simple II
+
+---
+
+# Preparación de datos en R
+
+El objetivo de esta práctica es revisar los **procedimientos básicos** para preparar datos con R. Estos procedimientos son necesarios para luego poder aplicar los contenidos específicos de este curso.
+
+--
+
+En general, el trabajo con datos se divide en:
+
+1- **Preparación de datos**
+
+2- **Análisis de datos**
+
+--
+
+![](images/produccion.png)
+
+---
+# Preparación de datos en R
+
+5 partes:
+
+--
+
+1. Librerías: Cargar librerías (paquetes) a utilizar
+
+--
+
+2. Datos: Cargar base de datos
+
+--
+
+3. Seleccionar variables a utilizar
+
+--
+
+4. Procesamiento de variables:
+
+  a. Visualizar descriptivos básicos
+
+  b. Recodificación: Eliminar casos perdidos y valores atípicos (de ser necesario)
+
+  c. Etiquetamiento: etiquetar variables y valores
+
+  d. Otros ajustes
+
+--
+
+5. Generar base de datos preparada para el posterior análisis
+
+
+---
+
+# Descripción de variables
+
+El objetivo de la segunda práctica es repasar contenidos de **Estadística descriptiva** y **Estadística correlacional**
+
+--
+
+![](images/produccion2.png)
+
+---
+
+# Descripción de variables
+
+1. Librerías: principales a utilizar en el análisis
+
+--
+
+2. Datos: Cargar base de datos preparada anteriormente
+
+--
+
+3. Descripción de variables:
+  
+  a. Tabla general descriptiva para la sección metodológica del trabajo
+  
+  b. Explorar descriptivamente la(s) relación(es) entre variables
+  
+--
+
+4. Contraste de hipótesis / inferencia estadística según la técnica que corresponda
+
+---
+
+# Descripción de variables
+
+.inverse[
+
+|   |var       |label                    |    n|       mean|         sd|range      |
+|:--|:---------|:------------------------|----:|----------:|----------:|:----------|
+|4  |mesfuerzo |Recompensa: esfuerzo     | 2909|  2.5727054|  1.0466874|4 (1-5)    |
+|5  |mtalento  |Recompensa: talento      | 2907|  2.7389061|  1.0596182|4 (1-5)    |
+|3  |ess       |Estatus Social Subjetivo | 2915|  4.3300172|  1.5666965|10 (0-10)  |
+|2  |edcine    |Educación                | 2925|  3.1839316|  1.2066058|4 (1-5)    |
+|7  |sexo      |Sexo                     | 2927|  0.6026648|  0.4894300|1 (0-1)    |
+|1  |edad      |Edad                     | 2927| 46.0908780| 15.2867983|70 (18-88) |
+|6  |pmerit    |Meritocracia promedio    | 2898|  2.6538992|  0.9694792|4 (1-5)    |
+]
+
+---
+# Descripción de variables
+
+* Variables categóricas: tabla de contingencia
+
+* Variable categórica y continua: tabla de promedios por cada categoría
+
+* Variables continuas: correlaciones
+
+---
+Descripción de variables: categóricas
+
+
+.inverse[
+&lt;table style="border-collapse:collapse; border:none;"&gt;
+ &lt;tr&gt;
+ &lt;th style="border-top:double; text-align:center; font-style:italic; font-weight:normal; border-bottom:1px solid;" rowspan="2"&gt;EducaciÃ³n&lt;/th&gt;
+ &lt;th style="border-top:double; text-align:center; font-style:italic; font-weight:normal;" colspan="2"&gt;Sexo&lt;/th&gt;
+ &lt;th style="border-top:double; text-align:center; font-style:italic; font-weight:normal; font-weight:bolder; font-style:italic; border-bottom:1px solid; " rowspan="2"&gt;Total&lt;/th&gt;
+ &lt;/tr&gt;
+ 
+&lt;tr&gt;
+ &lt;td style="border-bottom:1px solid; text-align:center; padding:0.2cm;"&gt;Hombre&lt;/td&gt;
+ &lt;td style="border-bottom:1px solid; text-align:center; padding:0.2cm;"&gt;Mujer&lt;/td&gt;
+ &lt;/tr&gt;
+ 
+&lt;tr&gt; 
+&lt;td style="padding:0.2cm;  text-align:left; vertical-align:middle;"&gt;Primaria incompleta&lt;br&gt;menos&lt;/td&gt;
+&lt;td style="padding:0.2cm; text-align:center; "&gt;&lt;span style="color:black;"&gt;102&lt;/span&gt;&lt;br&gt;&lt;span style="color:#339933;"&gt;8.9&amp;nbsp;&amp;#37;&lt;/span&gt;&lt;/td&gt;
+&lt;td style="padding:0.2cm; text-align:center; "&gt;&lt;span style="color:black;"&gt;247&lt;/span&gt;&lt;br&gt;&lt;span style="color:#339933;"&gt;14.2&amp;nbsp;&amp;#37;&lt;/span&gt;&lt;/td&gt;
+&lt;td style="padding:0.2cm; text-align:center;  "&gt;&lt;span style="color:black;"&gt;349&lt;/span&gt;&lt;br&gt;&lt;span style="color:#339933;"&gt;12.1&amp;nbsp;&amp;#37;&lt;/span&gt;&lt;/td&gt; 
+&lt;/tr&gt;
+ 
+&lt;tr&gt; 
+&lt;td style="padding:0.2cm;  text-align:left; vertical-align:middle;"&gt;Primaria y&lt;br&gt;secundaria baja&lt;/td&gt;
+&lt;td style="padding:0.2cm; text-align:center; "&gt;&lt;span style="color:black;"&gt;105&lt;/span&gt;&lt;br&gt;&lt;span style="color:#339933;"&gt;9.1&amp;nbsp;&amp;#37;&lt;/span&gt;&lt;/td&gt;
+&lt;td style="padding:0.2cm; text-align:center; "&gt;&lt;span style="color:black;"&gt;186&lt;/span&gt;&lt;br&gt;&lt;span style="color:#339933;"&gt;10.7&amp;nbsp;&amp;#37;&lt;/span&gt;&lt;/td&gt;
+&lt;td style="padding:0.2cm; text-align:center;  "&gt;&lt;span style="color:black;"&gt;291&lt;/span&gt;&lt;br&gt;&lt;span style="color:#339933;"&gt;10.1&amp;nbsp;&amp;#37;&lt;/span&gt;&lt;/td&gt; 
+&lt;/tr&gt;
+ 
+&lt;tr&gt; 
+&lt;td style="padding:0.2cm;  text-align:left; vertical-align:middle;"&gt;Secundaria alta&lt;/td&gt;
+&lt;td style="padding:0.2cm; text-align:center; "&gt;&lt;span style="color:black;"&gt;511&lt;/span&gt;&lt;br&gt;&lt;span style="color:#339933;"&gt;44.5&amp;nbsp;&amp;#37;&lt;/span&gt;&lt;/td&gt;
+&lt;td style="padding:0.2cm; text-align:center; "&gt;&lt;span style="color:black;"&gt;727&lt;/span&gt;&lt;br&gt;&lt;span style="color:#339933;"&gt;41.8&amp;nbsp;&amp;#37;&lt;/span&gt;&lt;/td&gt;
+&lt;td style="padding:0.2cm; text-align:center;  "&gt;&lt;span style="color:black;"&gt;1238&lt;/span&gt;&lt;br&gt;&lt;span style="color:#339933;"&gt;42.9&amp;nbsp;&amp;#37;&lt;/span&gt;&lt;/td&gt; 
+&lt;/tr&gt;
+ 
+&lt;tr&gt; 
+&lt;td style="padding:0.2cm;  text-align:left; vertical-align:middle;"&gt;Terciaria ciclo&lt;br&gt;corto&lt;/td&gt;
+&lt;td style="padding:0.2cm; text-align:center; "&gt;&lt;span style="color:black;"&gt;186&lt;/span&gt;&lt;br&gt;&lt;span style="color:#339933;"&gt;16.2&amp;nbsp;&amp;#37;&lt;/span&gt;&lt;/td&gt;
+&lt;td style="padding:0.2cm; text-align:center; "&gt;&lt;span style="color:black;"&gt;292&lt;/span&gt;&lt;br&gt;&lt;span style="color:#339933;"&gt;16.8&amp;nbsp;&amp;#37;&lt;/span&gt;&lt;/td&gt;
+&lt;td style="padding:0.2cm; text-align:center;  "&gt;&lt;span style="color:black;"&gt;478&lt;/span&gt;&lt;br&gt;&lt;span style="color:#339933;"&gt;16.6&amp;nbsp;&amp;#37;&lt;/span&gt;&lt;/td&gt; 
+&lt;/tr&gt;
+ 
+&lt;tr&gt; 
+&lt;td style="padding:0.2cm;  text-align:left; vertical-align:middle;"&gt;Terciaria y&lt;br&gt;Postgrado&lt;/td&gt;
+&lt;td style="padding:0.2cm; text-align:center; "&gt;&lt;span style="color:black;"&gt;245&lt;/span&gt;&lt;br&gt;&lt;span style="color:#339933;"&gt;21.3&amp;nbsp;&amp;#37;&lt;/span&gt;&lt;/td&gt;
+&lt;td style="padding:0.2cm; text-align:center; "&gt;&lt;span style="color:black;"&gt;286&lt;/span&gt;&lt;br&gt;&lt;span style="color:#339933;"&gt;16.5&amp;nbsp;&amp;#37;&lt;/span&gt;&lt;/td&gt;
+&lt;td style="padding:0.2cm; text-align:center;  "&gt;&lt;span style="color:black;"&gt;531&lt;/span&gt;&lt;br&gt;&lt;span style="color:#339933;"&gt;18.4&amp;nbsp;&amp;#37;&lt;/span&gt;&lt;/td&gt; 
+&lt;/tr&gt;
+ 
+&lt;tr&gt; 
+&lt;td style="padding:0.2cm;  border-bottom:double; font-weight:bolder; font-style:italic; text-align:left; vertical-align:middle;"&gt;Total&lt;/td&gt;
+&lt;td style="padding:0.2cm; text-align:center;   border-bottom:double;"&gt;&lt;span style="color:black;"&gt;1149&lt;/span&gt;&lt;br&gt;&lt;span style="color:#339933;"&gt;100&amp;nbsp;&amp;#37;&lt;/span&gt;&lt;/td&gt;
+&lt;td style="padding:0.2cm; text-align:center;   border-bottom:double;"&gt;&lt;span style="color:black;"&gt;1738&lt;/span&gt;&lt;br&gt;&lt;span style="color:#339933;"&gt;100&amp;nbsp;&amp;#37;&lt;/span&gt;&lt;/td&gt;
+&lt;td style="padding:0.2cm; text-align:center;   border-bottom:double;"&gt;&lt;span style="color:black;"&gt;2887&lt;/span&gt;&lt;br&gt;&lt;span style="color:#339933;"&gt;100&amp;nbsp;&amp;#37;&lt;/span&gt;&lt;/td&gt; 
+&lt;/tr&gt;
+ 
+&lt;/table&gt;
+]
+---
+# Descripción de variables: categórica y continua
+.inverse[
+
+|Educación                  | Obs.| Promedio|        SD|
+|:--------------------------|----:|--------:|---------:|
+|Primaria incompleta menos  |  349| 2.968481| 0.9828315|
+|Primaria y secundaria baja |  291| 2.697595| 1.0041093|
+|Secundaria alta            | 1238| 2.662762| 0.9685655|
+|Terciaria ciclo corto      |  478| 2.479080| 0.9431323|
+|Terciaria y Postgrado      |  531| 2.559322| 0.9223446|
+]
+---
+# Descripción de variables: continuas
+
+**¿Qué es una correlación?**
+
+--
+
+**¿Qué valores (rango) puede tener una correlación?**
+
+--
+
+* El **coeficiente de correlación** mide la fuerza de la relación lineal entre dos variables continuas
+
+* El **rango de variación** de este coeficiente va desde -1 (correlación perfectamente positiva) a 1 (Correlación perfectamente negativa)
+
+* Positiva: A medida que aumenta una variable, también aumenta la otra
+
+* Negativa: a medida que aumenta una variable, la otra variable disminuye
+
+* Neutra (0): No hay asociación entre variables
+
+Se debe analizar tanto su **tamaño** como su **significación estadística**
+
+---
+ Descripción de variables: continuas
+.center[
+![](repaso-practicos_files/figure-html/unnamed-chunk-6-1.png)&lt;!-- --&gt;
+]
+---
+ Descripción de variables: continuas
+.center[
+![](repaso-practicos_files/figure-html/unnamed-chunk-7-1.png)&lt;!-- --&gt;
+]
+
+---
+# Regresión simple I y II
+
+¿Residuos? ¿Parámetros? ¿Coeficientes? ¿Intercepto? ¿R2?
+
+--
+
+* **Intercepto**: (b0). Es el valor de Y (variable dependiente) cuando X (variable independiente) es = 0.
+
+* **Coeficiente de regresión**: (b1). Valor que nos dice cuánto aumenta Y (variable dependiente) por cada punto que aumenta X (variable independiente). En visualización, es similar a la **pendiente** de la ecuación de la recta.
+
+* **Residuos**: Diferencia entre el valor predicho y el valor observado
+
+* **R2**: Representa qué porcentaje de la **Varianza de Y** podemos explicar con nuestra variable independiente **X**. Este valor varía entre 0 y 1
+
+---
+# Regresión Simple I
+
+.inverse[
+&lt;table class="texreg" style="margin: 10px auto;border-collapse: collapse;border-spacing: 0px;caption-side: bottom;color: #000000;border-top: 2px solid #000000;"&gt;
+&lt;caption&gt;Statistical models&lt;/caption&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style="padding-left: 5px;padding-right: 5px;"&gt;&amp;nbsp;&lt;/th&gt;
+&lt;th style="padding-left: 5px;padding-right: 5px;"&gt;Meritocracia promedio&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr style="border-top: 1px solid #000000;"&gt;
+&lt;td style="padding-left: 5px;padding-right: 5px;"&gt;Intercepto&lt;/td&gt;
+&lt;td style="padding-left: 5px;padding-right: 5px;"&gt;2.97&lt;sup&gt;&amp;#42;&amp;#42;&amp;#42;&lt;/sup&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="padding-left: 5px;padding-right: 5px;"&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td style="padding-left: 5px;padding-right: 5px;"&gt;(0.05)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="padding-left: 5px;padding-right: 5px;"&gt;Nivel educacional&lt;/td&gt;
+&lt;td style="padding-left: 5px;padding-right: 5px;"&gt;-0.10&lt;sup&gt;&amp;#42;&amp;#42;&amp;#42;&lt;/sup&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="padding-left: 5px;padding-right: 5px;"&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td style="padding-left: 5px;padding-right: 5px;"&gt;(0.01)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="border-top: 1px solid #000000;"&gt;
+&lt;td style="padding-left: 5px;padding-right: 5px;"&gt;R&lt;sup&gt;2&lt;/sup&gt;&lt;/td&gt;
+&lt;td style="padding-left: 5px;padding-right: 5px;"&gt;0.02&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="padding-left: 5px;padding-right: 5px;"&gt;Adj. R&lt;sup&gt;2&lt;/sup&gt;&lt;/td&gt;
+&lt;td style="padding-left: 5px;padding-right: 5px;"&gt;0.01&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="border-bottom: 2px solid #000000;"&gt;
+&lt;td style="padding-left: 5px;padding-right: 5px;"&gt;Num. obs.&lt;/td&gt;
+&lt;td style="padding-left: 5px;padding-right: 5px;"&gt;2887&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;tfoot&gt;
+&lt;tr&gt;
+&lt;td style="font-size: 0.8em;" colspan="2"&gt;&lt;sup&gt;&amp;#42;&amp;#42;&amp;#42;&lt;/sup&gt;p &amp;lt; 0.001; &lt;sup&gt;&amp;#42;&amp;#42;&lt;/sup&gt;p &amp;lt; 0.01; &lt;sup&gt;&amp;#42;&lt;/sup&gt;p &amp;lt; 0.05&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tfoot&gt;
+&lt;/table&gt;
+]
+
+---
+class: center, middle
+
+# Repaso prácticos 1 a 4
+## **Desde preparación de datos en R hasta Regresión simple II**
+## Estadística multivariada 2022
+## **Universidad de Chile**
+## [multivariada.netlify.app](https://multivariada.netlify.com)
+
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="xaringan_custom/macros.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "solarized-dark",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
