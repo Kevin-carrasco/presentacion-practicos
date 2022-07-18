@@ -92,6 +92,8 @@ class: center
 
 ### **Endeudar para Mercantilizar**
 
+El CAE como mecanismo de financiamiento no sólo ha tenido un impacto importante en relación a los hogares, la Banca y las Instituciones de educación superior. Este crédito ha cambiado la estructura del Sistema de Educación Superior en su conjunto, de manera tal, que durante los últimos 16 años se consolidó un Sistema Privado de apéndice público.
+
 --
 
 ### **Endeudar para Gobernar**
@@ -102,18 +104,31 @@ Se implementó un dispositivo de control social y vital sobre el presente y futu
 
 ### **Deuda y morosidad**
 
+A diciembre de 2020 se registraban 641.288 personas pagando el CAE, ya sea desertores o egresados.
+
+En el caso de aquellos/as estudiantes que desertaron, el 79.2% se encuentran morosos/a, mientras que el 38.8% de egresados está en la misma situación.
+
 --
 
-### **Panorama territorial**
+#### **Panorama territorial**
+
+Al analizar las tasas de morosidad a nivel comunal, en territorios con elevado número de habitantes, se puede observar que existe cierta correlación entre morosidad e ingresos y pobreza. *A mayor morosidad, existe también mayor pobreza y menores ingresos*
 
 --
 
-### **Aranceles de referencia y aranceles reales**
+#### **Aranceles de referencia y aranceles reales**
+
+El valor del CAE otorgado se fija en relación al *Arancel de Referencia* y no al *Arancel Real* de la carrera. De esta manera se genera un pago adicional que puede llegar a ser de varios millones al año
 
 ---
+class: center, middle
 
+.pull-left[
+![](images/cae.png)
+]
 
-
-
+.pull-right[
+# **Muchas gracias por su atención!**
+]
 
 
