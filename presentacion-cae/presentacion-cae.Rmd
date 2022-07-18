@@ -1,0 +1,119 @@
+---
+title: "Endeudar para gobernar y mercantilizar: El caso del CAE (2021)"
+subtitle: ".small[**Marco Kremerman, Alexander Páez & Benjamín Sáez**]"
+author: "Presentación Capitalismo Histórico y Crisis Contemporánea"
+institute: ".medium[**Kevin Carrasco**]"
+date: "Lunes 18/07/2022"
+output:
+  xaringan::moon_reader:
+    css: ["xaringan-kevin.css", "animate.xaringan.css"]
+    nature:
+      highlightStyle: solarized-dark
+      highlightLines: true
+      countIncrementalSlides: false
+      beforeInit: "xaringan_custom/macros.js"
+---
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+style_duo_accent_inverse(primary_color = "#035AA6", secondary_color = "#03A696")
+```
+
+### Sobre el documento...
+
+--
+
+.pull-left[
+![](images/cae.png)
+]
+
+--
+
+.pull-right[
+"El crédito es uno de los mejores instrumentos de explotación que el hombre haya sabido establecer, porque algunos [individuos], fabricando papel, pueden apropiarse del trabajo y la riqueza de otro" 
+.right[**Gabriel Ardant**]
+.right[*Lazzarato, 2013:25*]
+
+"Lo que tenemos que tener claro, es que el joven que hoy está endeudado en un tiempo empezará a preguntarse "¿y por qué yo?", cuestionará al Estado y el gobierno debe estar preparado cuando eso pase."
+.right[**Sergio Bitar**]
+.right[*The Clinic 12 enero 2016*]
+]
+
+---
+class: center, animated
+
+# Tesis central
+
+--
+
+### El acceso al **crédito** y, por lo tanto, a la deuda, funciona como un instrumento de **gobernanza** y de **mercantilización** de distintos servicios sociales básicos como educación, salud y vivienda.
+
+--
+
+#### En específico, el **Crédito con Aval del Estado (CAE)** desde el 2005 ha permitido profundizar la **educación de mercado** -financiando instituciones privadas de educación- y ha permitido establecer *institucionalmente* la **obligación de endeudarse**
+
+---
+
+### Antecedentes teóricos
+
+--
+
+### **Aspiracionalismo y meritocracia**
+
+"Para el caso de Chile esto provocó un conflicto material evidente, pues los hogares para evitar la pobreza hipotecaban su fuerza de trabajo futura para obtener credenciales que les permitirían el tan anhelado ascenso social."
+
+--
+
+### **Expropiación financiera**
+
+"Se permite extraer beneficios financieros para la parte acreedora, a partir de la expropiación de los salarios reales de los hogares deudores."
+
+--
+
+### **Economía de la deuda**
+
+"Se establece un mecanismo de disciplinamiento para ellos y altas tasas de rentabilidad para el sector financiero."
+
+---
+class: center
+### Comparación de carga financiera e ingresos disponibles
+
+![](images/cuadro1.png)
+
+---
+
+### Antecedentes empíricos **El caso del CAE**
+
+--
+
+**Subsidio a la demanda** como columna central del sistema de financiamiento de la Educación Superior.
+
+--
+
+### **Endeudar para Mercantilizar**
+
+--
+
+### **Endeudar para Gobernar**
+
+Se implementó un dispositivo de control social y vital sobre el presente y futuro de muchos estudiantes a través de la deuda.
+
+---
+
+### **Deuda y morosidad**
+
+--
+
+### **Panorama territorial**
+
+--
+
+### **Aranceles de referencia y aranceles reales**
+
+---
+
+
+
+
+
+
