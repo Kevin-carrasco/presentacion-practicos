@@ -1,0 +1,81 @@
+---
+title: "Comentarios informe 2021"
+author: "Kevin Carrasco Quintanilla"
+institute: ".small[**Universidad de Chile**]"
+date: ".small[Jueves 6 de junio de 2022]"
+output:
+  xaringan::moon_reader:
+    css: ["xaringan-themer.css"]
+    seal: false
+    nature:
+      highlightStyle: solarized-dark
+      highlightLines: true
+      countIncrementalSlides: false
+      beforeInit: "xaringan_custom/macros.js"
+      ratio: '16:9'
+---
+class: middle title-slide
+
+```{r xaringanExtra, echo = FALSE}
+  xaringanExtra::use_progress_bar(color = "red", location = c("top"))
+```
+
+.pull-left[
+
+![:scale 70%](images/logocoes.png)
+
+]
+
+
+
+.pull-right[
+.content-box-purple[
+## Comentarios informe 2021
+
+]
+
+.red[
+.center[
+
+### Línea 2 - Interacciones grupales e individuales
+ 
+
+COES - 21 de Noviembre 2022
+]]
+
+]
+---
+
+layout: true
+class: animated, fadeIn
+
+---
+
+.pull-left[
+<br>
+<br>
+<br>
+Reviewer 1
+
+![:scale 120%](images/rev1.png)
+]
+
+.pull-right[
+<br>
+<br>
+<br>
+Reviewer 2
+
+![:scale 100%](images/rev2.png)
+]
+
+---
+### Comentarios específicos
+
+This research line is strongly connected with the line 3 (based on a specific focus on elite), but with weak links with line 4 and more particularly with line 1. 
+
+In the projection part (page 29), a future collaboration on poor neighborhoods with line 4 is presenting, but no more about future collaboration with line 1.
+
+If the elite cross-thematic agenda is well integrated, what about the gender cross-thematic agenda in this research line?
+
+If ethnicity is analyzing around the solidarity between indigenous and non-indigenous people, I do not see specific research on people from immigrant background ?
