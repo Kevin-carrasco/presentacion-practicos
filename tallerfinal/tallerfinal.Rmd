@@ -23,7 +23,7 @@ class: middle title-slide
 
 .content-box-purple[
 .center[
-## Taller Final
+## Taller Final_final
 ----
 #### Diseños de investigación
 ]
@@ -40,7 +40,7 @@ class: middle title-slide
  Lucas Martin
  
 
-10 de Noviembre 2022
+24 de Noviembre 2022
 ]
 
 ---
@@ -51,121 +51,47 @@ class: animated, fadeIn
 
 ---
 
-## Objetivo
+## Objetivos
 
-1.	Identificar y conocer los distintos tipos de diseño de investigación.
+1.	Identificar y conocer los tipos de enfoques de investigación cuantitativo y cualitativo.
 
-2.	Construir y adaptar distintos diseños de investigación.
+2.	Construir y adaptar los enfoques de investigación.
+
 
 
 ---
 
 ## Instrucciones
 
-●	Utilizando el tema que han trabajado durante el semestre, realizar una propuesta para cada uno de los tipos de diseño vistos en clases, que les permita profundizar en su problemática.
-
-●	Pueden combinar más de un tipo de diseño en cada una de sus propuestas, pero deben idear al menos una estrategia para cada tipo de estudio.
+●	Utilizando el tema que han trabajado durante el semestre, realizar una propuesta de investigación para el enfoque cuantitativo y para el enfoque cualitativo, que les permita profundizar en su problemática.
 
 ●	Estas propuestas deben contener:
 
-a)	El objetivo del estudio (qué es lo que les interesa conocer respecto a su problemática). Es decir, ustedes deben identificar un aspecto particular dentro de la problemática general que han estado trabajando durante el semestre. Deben utilizar las preguntas y objetivos que ya han elaborado, y hacer las modificaciones necesarias para poder adaptar el objeto de estudio al tipo de diseño.
+a)	Pregunta y objetivo del estudio (qué es lo que les interesa conocer respecto a su problemática). Deben utilizar las preguntas y objetivos que ya han elaborado, y hacer las modificaciones necesarias para poder adaptar el objeto de estudio al enfoque de diseño.
 
-b)	Por cada tipo de diseño deberán describir brevemente las características básicas de los estudios que ustedes harían.  Dentro de sus propuestas, deberán identificar –al menos- los siguientes elementos para cada estudio:
+b)	Por cada enfoque deberán describir brevemente las características básicas de los estudios que ustedes harían.  Dentro de sus propuestas, deberán identificar –al menos- los siguientes elementos para cada estudio:
 
----
-## Instrucciones
-
-●	Utilizando el tema que han trabajado durante el semestre, realizar una propuesta para cada uno de los tipos de diseño vistos en clases, que les permita profundizar en su problemática.
-
-●	Pueden combinar más de un tipo de diseño en cada una de sus propuestas, pero deben idear al menos una estrategia para cada tipo de estudio.
-
-●	Estas propuestas deben contener:
-
-.red[a)	El objetivo del estudio (qué es lo que les interesa conocer respecto a su problemática). Es decir, ustedes deben identificar un aspecto particular dentro de la problemática general que han estado trabajando durante el semestre. Deben utilizar las preguntas y objetivos que ya han elaborado, y hacer las modificaciones necesarias para poder adaptar el objeto de estudio al tipo de diseño.]
-
-b)	Por cada tipo de diseño deberán describir brevemente las características básicas de los estudios que ustedes harían.  Dentro de sus propuestas, deberán identificar –al menos- los siguientes elementos para cada estudio:
-
----
-## Instrucciones
-
-●	Utilizando el tema que han trabajado durante el semestre, realizar una propuesta para cada uno de los tipos de diseño vistos en clases, que les permita profundizar en su problemática.
-
-●	Pueden combinar más de un tipo de diseño en cada una de sus propuestas, pero deben idear al menos una estrategia para cada tipo de estudio.
-
-●	Estas propuestas deben contener:
-
-a)	El objetivo del estudio (qué es lo que les interesa conocer respecto a su problemática). Es decir, ustedes deben identificar un aspecto particular dentro de la problemática general que han estado trabajando durante el semestre. Deben utilizar las preguntas y objetivos que ya han elaborado, y hacer las modificaciones necesarias para poder adaptar el objeto de estudio al tipo de diseño.
-
-.red[b)	Por cada tipo de diseño deberán describir brevemente las características básicas de los estudios que ustedes harían.  Dentro de sus propuestas, deberán identificar –al menos- los siguientes elementos para cada estudio:]
 
 ---
 
-1 **Diseños Experimentales**
- 
-Variable(s) dependiente(s) e independiente(s).
+1- **Propuesta de investigación cuantitativa:**
 
-Población de interés: grupo de tratamiento y control
+·         Pregunta y objetivos de la investigación
 
-Manipulación variable independiente
+·         Hipótesis
 
-Técnica observación/medición efecto(s)
+·         Descripción y justificación del tipo de diseño empleado (transversal, longitudinal, experimental, etc)
 
-2 **Diseños Transversales**
+·         Descripción de la metodología empleada para recolectar datos (encuestas, datos secundarios, etc.)
 
-Enfoque -cuantitativo, cualitativo, mixto-
+2- **Propuesta de investigación cualitativa:**
 
-Unidad de análisis
+·         Pregunta y objetivos de la investigación
 
-Técnicas de recolección de datos
+·         Hipótesis (opcional)
 
-Características relevantes de la muestra -del grupo, instituciones, espacios, individuos a estudiar-.
+·         Descripción y justificación del tipo de diseño empleado (transversal, longitudinal, experimental, etc.)
 
----
-
-3 **Diseños Longitudinales**
-
-Enfoque –cuantitativo, cualitativo, mixto-
-
-Unidad de análisis
-
-Tipo de estudio (de panel, de cohorte, de tendencia)
-
-Técnicas de recolección de datos
-
-Tiempos medición
-
-Características relevantes de la muestra -del grupo, instituciones, espacios, individuos a estudiar-.
-
----
-
-## Ejemplos
-
-**Diseño Experimental**
-
-“Planificación para la comprensión: Un estudio cuasi experimental”
-
-El diseño de esta investigación está enmarcado en el paradigma cuantitativo. Se pretende evaluar el impacto que un curso de capacitación basado en el programa “Understanding By Design” puede causar en los procesos de planificación en estudiantes de pedagogía de universidad estatal chilena. El programa UBD busca implementar una estructura, compatible con todo marco curricular que permita a los profesores de cualquier disciplina, promover en sus alumnos aprendizajes y sobre todo comprensión profunda y duradera de los contenidos.
-
-El método y diseño es de carácter cuasi experimental. La población de estudio serán estudiantes de último año de la carrera de pedagogía básica de la Universidad de Valparaíso. De esta población de este estudio (dieciséis participantes) se formarán dos grupos conformados por participantes con características equivalentes, un grupo será denominado como grupo control y el otro como grupo experimental, con ocho participantes cada uno. Los procesos de planificación serán medidos a través de un test llamado “Assessment of Candidate Ability to Plan Instruction” de la Universidad de Hawái la cual será aplicada a ambos grupos antes y después de la capacitación en el programa. El grupo experimental asistirá a un curso de capacitación de dos sesiones de 90 minutos.
-
----
-
-## Ejemplos
-
-**Diseño Transversal**
-
-“El soporte cultural para el mercado educacional. Disposiciones culturales y prácticas de las familias chilenas referidas a la elección de escuelas”
+·         Descripción de metodología empleada para recolectar datos (entrevistas en profundidad, observaciones participantes, etc.)
 
 
-El objeto de este estudio, conocer las prácticas de elección de escuela por las familias y comprender sus racionalidades, será observado cualitativamente. Se estudiará (en dos años) seis casos-zona (4 metropolitanos y 2 agrourbes) definidos por la confluencia territorial y la estratificación social de sus habitantes, cubriendo ampliamente la estructura de clases chilena. Se realizarán en total al menos 114 entrevistas focalizadas a familias de diferente condición social, con hijos en enseñanza básica y media, y con distintos comportamientos en cuanto a la elección de escuelas; también se entrevistará a informantes calificados de cada caso-zona, para conocer mejor la dinámica del “mercado escolar local”. Complementariamente, se realizarán 12 grupos de discusión con familias.
-
----
-
-## Ejemplos
-
-**Diseño Longitudinal**
-
-“Participación Femenina en Carreras de Ciencias, Tecnología, Ingeniería y Matemáticas en la Educación Superior Chilena”
-
-
-Se llevará a cabo un estudio cuantitativo y longitudinal, ya que realiza el seguimiento de los estudiantes que participaron en la prueba SIMCE en 2° medio el año 2019, considerando tres momentos clave en relación con su ingreso a la educación superior: el rendir la PSU el 2021, la postulación a carreras universitarias, y la decisión de matrícula el 2022. Se hará uso de diferentes fuentes de información secundaria, provenientes del Ministerio de Educación, la Agencia de Calidad de la Educación, el DEMRE y el Servicio de Información de Educación Superior (SIES). Estas fuentes proveerán información relativa a los estudiantes, sus hogares, sus contextos educativos y los datos referentes al proceso de admisión a la educación superior. Esto permitirá dar cuenta de las variables que permiten predecir el desempeño en la PSU, las preferencias de los estudiantes por carreras STEM, su decisión de matricularse, e identificar cuál es la magnitud con que inciden. Por otra parte, atendiendo a las diferencias de género en cuanto a la participación en carreras STEM, permitirá caracterizar las preferencias y decisiones de las estudiantes, a partir de los factores individuales y contextuales que dan lugar a distintas trayectorias dentro del proceso de ingresar a la educación superior.
